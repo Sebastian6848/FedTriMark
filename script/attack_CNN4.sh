@@ -1,0 +1,23 @@
+python main.py \
+    --start_epochs 30 \
+    --epochs 30 \
+    --num_clients 50 \
+    --clients_percent 0.4 \
+    --pre_train 'True' \
+    --model 'CNN4' \
+    --dataset "mnist" \
+    --num_channels 1 \
+    --num_classes 10 \
+    --image_size 32 \
+    --gpu 0 \
+    --seed 1 \
+    --save_dir "./result/CNN4/" \
+    --embed_layer_names "extractor.conv1;classifier.fc1" \
+    --lambda1 0.0005 \
+    --lambda2 0.005 \
+    --test_interval 10 \
+    --watermark 'False' \
+    --fingerprint 'False'\
+    --attack_type 'prune' \
+    --isParameter 'True' \
+    --save 'False'

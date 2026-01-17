@@ -1,0 +1,16 @@
+python main.py  \
+    --epochs 50 \
+    --num_clients 50 \
+    --clients_percent 0.4 \
+    --model 'AlexNet' \
+    --dataset "cifar10" \
+    --num_classes 10 \
+    --image_size 32 \
+    --gpu 0 \
+    --seed 1 \
+    --save_dir "./result/AlexNet/" \
+    --embed_layer_names "features.bn3;features.bn4"\
+    --lambda1 0.0005 \
+    --lambda2 0.005 \
+    --test_interval 10 \
+    --pre_train 'False'

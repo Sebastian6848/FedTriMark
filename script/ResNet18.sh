@@ -1,0 +1,23 @@
+python main.py \
+    --epochs 100 \
+    --num_clients 50 \
+    --clients_percent 0.4 \
+    --model 'ResNet18' \
+    --dataset "cifar100" \
+    --num_classes 100 \
+    --image_size 32 \
+    --gpu 0 \
+    --seed 1 \
+    --save_dir "./result/ResNet18/" \
+    --num_trigger_each_class 5 \
+    --embed_layer_names "layer1.layer1.left.bn2;layer2.layer2.left.bn2" \
+    --lambda1 0.0005 \
+    --lambda2 0.005 \
+    --test_interval 5 \
+    --start_epochs 80 \
+    --isParameter 'True' \
+    --pre_train 'True' \
+    --pre_train_path './result/ResNet18/model_last_epochs_80.pth' \
+    --trigger_path "./result/ResNet18/watermark_data/trigger_set.pth" \
+    --fingerprints_path "./result/ResNet18/watermark_data/local_fingerprints.npy" \
+    --matrices_path "./result/ResNet18/watermark_data/extracting_matrices.pth"

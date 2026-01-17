@@ -1,0 +1,7 @@
+/data/cifar10
+/data/cifar100
+/data/mnist
+/result
+/attack
+*.log
+*.out
