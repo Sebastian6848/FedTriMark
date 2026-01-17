@@ -56,3 +56,11 @@ FedTriMark is a research-oriented codebase for watermark/fingerprint and attack 
 ## 许可 / License
 若未特别说明，默认遵循学术研究用途。请在使用前确认许可证要求。
 If not otherwise specified, this project is intended for academic research. Please check licensing requirements before use.
+
+This project partially references：
+@article{shao2024fedtracker,
+  title={Fedtracker: Furnishing Ownership Verification and Traceability for Federated Learning Model},
+  author={Shao, Shuo and Yang, Wenyuan and Gu, Hanlin and Qin, Zhan and Fan, Lixin and Yang, Qiang and Ren, Kui},
+  journal={IEEE Transactions on Dependable and Secure Computing},
+  year={2024}
+}
